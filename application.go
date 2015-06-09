@@ -50,7 +50,7 @@ type Application struct {
 	Instances             int                 `json:"instances,omitemptys"`
 	Mem                   float64             `json:"mem,omitempty"`
 	Tasks                 []*Task             `json:"tasks,omitempty"`
-	Ports                 []int               `json:"ports,omitempty"`
+	Ports                 []int               `json:"ports"`
 	RequirePorts          bool                `json:"requirePorts,omitempty"`
 	BackoffSeconds        float64             `json:"backoffSeconds,omitempty"`
 	BackoffFactor         float64             `json:"backoffFactor,omitempty"`
